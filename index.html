@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flarie Primăvara S.R.L.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #f47c7c;
+      padding: 1.5em;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background-color: #fcd5ce;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #444;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2em;
+    }
+    .info, .contact, .produse {
+      margin-bottom: 2em;
+    }
+    .produse-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5em;
+    }
+    .produs {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1em;
+      text-align: center;
+    }
+    .produs img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5em;
+    }
+    form {
+      background-color: #ffe9e3;
+      padding: 1.5em;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    form button {
+      background-color: #f47c7c;
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #fcd5ce;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flarie Primăvara S.R.L.</h1>
+    <p>Flori și primăvară în fiecare zi – în Chișinău</p>
+  </header>
+
+  <nav>
+    <a href="#despre">Despre</a>
+    <a href="#produse">Produse</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="info" id="despre">
+      <h2>Despre noi</h2>
+      <p><strong>Forma juridică:</strong> SRL</p>
+      <p><strong>Adresa juridică:</strong> Strada Florilor 18, Chișinău 2068, Republica Moldova</p>
+      <p><strong>IDNO:</strong> 1012600049999</p>
+      <p><strong>CAE:</strong> 4776 – Comerț cu amănuntul al florilor, plantelor și semințelor</p>
+    </section>
+
+    <section class="produse" id="produse">
+      <h2>Florile noastre</h2>
+      <div class="produse-grid">
+        <div class="produs">
+          <img src="https://via.placeholder.com/200x180?text=Trandafiri" alt="Trandafiri">
+          <h3>Trandafiri roșii</h3>
+          <p>Eleganță clasică pentru orice ocazie. 60 MDL / fir</p>
+        </div>
+        <div class="produs">
+          <img src="https://via.placeholder.com/200x180?text=Lalele" alt="Lalele">
+          <h3>Lalele multicolore</h3>
+          <p>Simbolul primăverii. 50 MDL / fir</p>
+        </div>
+        <div class="produs">
+          <img src="https://via.placeholder.com/200x180?text=Orhidee" alt="Orhidee">
+          <h3>Orhidee Phalaenopsis</h3>
+          <p>Rafinament exotic. 250 MDL / ghiveci</p>
+        </div>
+        <div class="produs">
+          <img src="https://via.placeholder.com/200x180?text=Buchet+Mix" alt="Buchet mix">
+          <h3>Buchet mixt de sezon</h3>
+          <p>Colorat și parfumat. 300 MDL / buchet</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contactează-ne</h2>
+      <form action="https://formsubmit.co/info@flarie.md" method="POST">
+        <input type="text" name="name" placeholder="Numele tău" required>
+        <input type="email" name="email" placeholder="Email-ul tău" required>
+        <textarea name="message" rows="5" placeholder="Mesajul tău" required></textarea>
+        <button type="submit">Trimite</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Flarie Primăvara S.R.L. | Florile aduc zâmbete!
+  </footer>
+</body>
+</html>
